@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+
+@font-face {
+  font-family: 'Italiana';
+  src: url('./Italiana-Regular.ttf') format('truetype');
+}
+:root {
+  --cream: #e1e1ca;
+  --olive: #999a4e;
+  --font-main: "Afacad", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--olive);
+  font-family: var(--font-main);
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0rem 3.5rem 0rem 2rem;
+  height: 3.5rem;
+  background: var(--olive);
+  color: var(--cream);
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 41px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.socials a {
+  display: flex;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-size: 46px;
+  color: black;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+}
+
+.images-align{
+  display: flex;
+  flex-direction: row;
+  margin: 60px 60px 60px 60px;
+  justify-content: space-between;
+ 
+}
+
+.card{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.card img{
+  border-radius: 16px;
+}
+
+.card p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #3C4618;
+}
