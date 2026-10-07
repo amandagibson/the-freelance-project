@@ -102,3 +102,12 @@ align-items: center;
   font-size: 24px;
   color: #3C4618;
 }
+
+.decorative-flower{
+  margin-left:50%;
+  transform: translateX(-50%);
+  height:174.97px;
+  width:116.65px;
+  margin-top:60px;
+  margin-bottom:60px;
+}
