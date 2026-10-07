@@ -124,15 +124,55 @@ align-items: center;
 .place-your-order{
   text-align:center;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 300;
   color: #3C4618;
 }
 
 .price-range{
   text-align:left;
   font-size: 24px;
-  font-weight:200;
+  font-weight:100;
   margin-top: 10px;
   margin-left:60px;
   color: #3C4618;
 }
+
+
+
+.flex-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-left:60px;
+  margin-right:60px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.price-card{
+  border-radius: 16px;
+  border: 2px solid #3C4618;
+  padding: 10px;
+  width: 400px;
+  
+  
+  }
+
+  .price-card:hover{
+    background-color: #3C4618;
+    .price-range-container{
+      color: #e1e1ca; }
+    }
+
+
+  .price-range-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-left:20px;
+    color: #3C4618;
+    font-size: 24px;
+    text-align:center;
+  }
+
+  
