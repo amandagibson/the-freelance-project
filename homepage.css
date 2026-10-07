@@ -3,6 +3,10 @@
   src: url("Italiana-Regular.ttf") format("truetype");
 }
 
+
+/* First section (Our Services) */
+
+
 h1.shop-name {
   text-align: center;
   font-size: 3.5rem;
@@ -15,20 +19,22 @@ h1.shop-name {
 .hero {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   padding: 40px 60px;
 }
 
 .hero-img {
-  flex: 1;
-  min-width: 0;
+  flex: none;
+  width: auto;
+  height: auto;
   max-width: 100%;
-  object-fit: cover;
   border-radius: 20px;
 }
 
 .hero-text {
   flex: 1;  
+  min-width: 0;
+  padding: 0 120px 0 40px;
   font-family: var(--font-main);
   color: var(--dark-green);
 } 
@@ -55,6 +61,10 @@ h1.shop-name {
   text-decoration: none;
   transition: background 0.3s;
 }
+
+
+/* Second section (Reviews) */
+
 
 .reviews {
      margin-top: 150px;
@@ -95,13 +105,14 @@ h1.shop-name {
   width: 30px;
   height: 30px;
   border-radius: 50%;   
-  background: #9a9a4e;
+  background: var(--dark-green);
 }
 
 .reviewer-name {
   font-weight: 600;
   font-size: 0.85rem;
   color: #000;
+  font-family: var(--font-main);
 }
 
 .stars {
@@ -118,8 +129,51 @@ h1.shop-name {
   margin: 0;
   font-size: 0.85rem;
   line-height: 1.5;
+  font-family: var(--font-main);
+  color: var(--dark-green);
 }
 
 .review-date {
   font-size: 0.75rem;
+}
+
+
+/* Third section (Our Story) */
+
+
+.story {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 60px;
+  margin-top: 80px;
+}
+
+.story-img {
+  flex: none;            
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 0;
+  padding: 0 120px 0 40px;
+  font-family: var(--font-main);
+  color: var(--dark-green);
+}
+
+.story-text h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.story-text p {
+  margin: 0 0 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 18px;
 }
