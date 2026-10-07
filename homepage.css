@@ -15,19 +15,20 @@ h1.shop-name {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
+  gap: 40px;
   padding: 40px 60px;
 }
 
 .hero-img {
-  width: 45%;
-  max-width: 460px;
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 20px;
 }
 
 .hero-text {
-  max-width: 380px;
+  flex: 1;  
   font-family: var(--font-main);
   color: var(--dark-green);
 } 
@@ -53,4 +54,72 @@ h1.shop-name {
   border-radius: 10px;
   text-decoration: none;
   transition: background 0.3s;
+}
+
+.reviews {
+     margin-top: 150px;
+  padding: 40px 60px;
+  text-align: center;
+  font-family: var(--font-main);
+}
+
+.reviews h2 {
+  margin: 0 0 30px;
+  font-size: 1.6rem;
+  color: var(--dark-green);
+}
+
+.review-cards {
+  display: flex;
+  gap: 10px;
+}
+
+.review-card {
+  flex: 1;              
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #5a5a1e;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;   
+  background: #9a9a4e;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #000;
+}
+
+.stars {
+  color: #e0a800;  
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.stars .empty {
+  color: #666;     
+}
+
+.review-text {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.review-date {
+  font-size: 0.75rem;
 }
