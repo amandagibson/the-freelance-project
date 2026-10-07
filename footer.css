@@ -26,6 +26,8 @@ main {
   font-weight: 400;
   font-size: 0.875rem;
   min-height: 21.75rem;
+  grid-template-rows: 1fr auto;
+  column-gap: 2rem;
 }
 
 .footer a {
@@ -70,4 +72,12 @@ main {
 
 .footer-list-socials {
   row-gap: 1rem;
+}
+
+.footer-disclaimer {
+  grid-column: 1 / -1; /* span all three columns */
+  margin: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
 }
