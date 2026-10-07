@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Italiana";
+  src: url("Italiana-Regular.ttf") format("truetype");
+}
+
+h1.shop-name {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 60px 0 40px;
+  font-family: "italiana", sans-serif;
+  color: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 40px 60px;
+}
+
+.hero-img {
+  width: 45%;
+  max-width: 460px;
+  border-radius: 20px;
+}
+
+.hero-text {
+  max-width: 380px;
+  font-family: var(--font-main);
+  color: var(--dark-green);
+} 
+
+.hero-text h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero-text p {
+  margin: 0 0 24px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--dark-green);
+  color: var(--cream);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
