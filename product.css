@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
 
+*{box-sizing: border-box;}
 @font-face {
   font-family: 'Italiana';
   src: url('./Italiana-Regular.ttf') format('truetype');
@@ -91,10 +92,15 @@ body {
 display: flex;
 flex-direction: column;
 align-items: center;
+flex: 1 1 260px;
+max-width:340px;
 
 }
 
 .card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit: cover;
   border-radius: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease-in-out;
@@ -254,3 +260,89 @@ align-items: center;
       transform: translateY(-3px);
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25)
     }
+
+
+    @media (max-width: 1175px) {
+  
+  .images-align,
+  .flex-container {
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 16px;
+  }
+
+  .price-range {
+    margin-left: 30px;
+  }
+
+  .big-form-cont {
+    padding: 0 30px;
+  }
+
+  .price-range-container {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .images-align {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 20px;
+  }
+
+
+  .flex-container {
+    flex-direction: column;
+    margin: 20px;
+    gap: 12px;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+
+  .price-range {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  
+  .big-form-cont {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+
+  
+  .delivery-time-flex {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  
+  .submit-button {
+    width: 100%;
+  }
+
+ 
+  textarea {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 34px;
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+}
