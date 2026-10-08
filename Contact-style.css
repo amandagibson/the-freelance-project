@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Italiana";
+  src: url("assets/Italiana/Italiana-Regular.ttf") format(truetype);
+}
+.contactPage {
+  margin: 60px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  font-family: "Italiana";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contactPage ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.icons {
+  width: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.websiteLink {
+  color: #3c4618;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.openingHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0px;
+  white-space: nowrap;
+}
+
+.openingHours h2 {
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 600;
+  color: #3c4618;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+
+.vline {
+  width: 1px;
+  align-self: stretch;
+  background-color: #3c4618;
+  margin-inline: auto;
+}
+
+.contactInfo0 {
+  display: flex;
+}
+
+.openingHours p {
+  color: #3c4618;
+  font-family: Afacad;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.noGap {
+  margin: 0px;
+}
+
+/* .contactInfo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+} */
+
+.contactInfo2 li {
+  margin-bottom: 0.75rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start; */
+}
+
+.contactInfo,
+.contactInfo1,
+.contactInfo2 {
+  white-space: nowrap;
+}
+
+.contactInfo span,
+.contactInfo1 span,
+.contactInfo2 span {
+  color: #3c4618;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.contactPage {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 64px;
+  flex-wrap: wrap;
+}
+@media (max-width: 960px) {
+  .contactPage {
+    justify-content: flex-start;
+    gap: 32px;
+  }
+  /* .flowerDivider img {
+    width: 70%;
+  } */
+}
+@media (max-width: 630px) {
+  .contactPage {
+    gap: 16px;
+  }
+  .vline {
+    display: none;
+  }
+  .flowerDivider img {
+    min-width: 50%;
+  }
+  /* .btn {
+    width: auto;
+  } */
+}
+.btn {
+  padding-bottom: 4px;
+  padding-inline-start: 10px;
+  padding-top: 4px;
+  display: flex;
+  width: 50%;
+  /* padding: 15px 10px; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.3px solid #3c4618;
+  color: #3c4618;
+  background: none;
+  margin: 0px;
+}
+.section2 {
+  margin: 60px;
+}
+.sectionTitle {
+  color: #3c4618;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+/* .contactForm {
+  width: 100%;
+}
+.inputField {
+  width: 100%;
+} */
+#inputField {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  border: 1.3px solid #3c4618;
+  border-radius: 8px;
+  resize: vertical;
+  background: none;
+  margin-bottom: 0px;
+}
+
+.flowerDivider {
+  display: flex;
+}
+
+.flowerDivider img {
+  margin-inline: auto;
+}
+
+.contactInfo0 li a,
+.contactInfo1 li a,
+.contactInfo2 li a {
+  display: flex;
+}
