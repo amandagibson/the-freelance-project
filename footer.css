@@ -16,7 +16,8 @@ body {
 }
 /* DELETE- placeholder so the footer sits at the bottom while <main> is empty. */
 main {
-  min-height: 75vh;
+  /* min-height: 75vh; */
+  padding-bottom: 4rem;
 }
 
 .footer {

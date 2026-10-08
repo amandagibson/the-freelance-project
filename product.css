@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
 
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 @font-face {
-  font-family: 'Italiana';
-  src: url('./Italiana-Regular.ttf') format('truetype');
+  font-family: "Italiana";
+  src: url("./Italiana-Regular.ttf") format("truetype");
 }
 :root {
   --cream: #e1e1ca;
@@ -80,190 +82,178 @@ body {
   font-weight: 400;
 }
 
-.images-align{
+.images-align {
   display: flex;
   flex-direction: row;
   margin: 60px 60px 60px 60px;
   justify-content: space-between;
- 
 }
 
-.card{
-display: flex;
-flex-direction: column;
-align-items: center;
-flex: 1 1 260px;
-max-width:340px;
-
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 260px;
+  max-width: 340px;
 }
 
-.card img{
-  width:100%;
-  aspect-ratio:1/1;
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease-in-out;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.card p{
+.card p {
   font-weight: 400;
   font-size: 24px;
-  color: #3C4618;
+  color: #3c4618;
 }
 
-.card img:hover{
+.card img:hover {
   transform: scale(1.05);
-  
-  }
-
-
-
-.decorative-flower{
-  margin-left:50%;
-  transform: translateX(-50%);
-  height:174.97px;
-  width:116.65px;
-  margin-top:60px;
-  margin-bottom:60px;
 }
 
-.place-your-order{
-  text-align:center;
+.decorative-flower {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 174.97px;
+  width: 116.65px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.place-your-order {
+  text-align: center;
   font-size: 32px;
   font-weight: 300;
-  color: #3C4618;
+  color: #3c4618;
 }
 
-.price-range{
-  text-align:left;
+.price-range {
+  text-align: left;
   font-size: 24px;
-  font-weight:100;
+  font-weight: 100;
   margin-top: 10px;
-  margin-left:60px;
-  color: #999A4E;
+  margin-left: 60px;
+  color: #999a4e;
 }
 
-
-
-.flex-container{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  margin-left:60px;
-  margin-right:60px;
-  margin-top:20px;
-  margin-bottom:20px;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.price-card{
+.price-card {
   border-radius: 16px;
-  border: 2px solid #3C4618;
+  border: 2px solid #3c4618;
   padding: 10px;
   width: 400px;
-  cursor:pointer;
-  
-  
+  cursor: pointer;
+}
+
+.price-card:hover {
+  background-color: #3c4618;
+  .price-range-container {
+    color: #e1e1ca;
   }
+}
 
-  .price-card:hover{
-    background-color: #3C4618;
-    .price-range-container{
-      color: #e1e1ca; }
-    }
+.price-range-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  color: #3c4618;
+  font-size: 24px;
+  text-align: center;
+}
 
+.big-form-cont {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 97px;
+}
 
-  .price-range-container{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    margin-left:20px;
-    color: #3C4618;
-    font-size: 24px;
-    text-align:center;
-  }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
 
+label {
+  display: block;
+  font-size: 24px;
+  font-weight: 100;
+  color: #615c23;
+  margin-bottom: 7px;
+}
 
-  .big-form-cont{
-    
-    margin-left:60px;
-    margin-right:60px;
-    margin-top:97px;
-    }
-  
-    .form-group{
-      display:flex;
-      flex-direction:column;
-      margin-bottom:50px;
-    }
+input {
+  background-color: #e1e1ca;
+  color: rgb(143, 141, 141);
+  border-color: #615c23;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 10px;
+}
 
-    label{
-      display: block;
-      font-size: 24px;
-      font-weight: 100;
-      color: #615C23;
-      margin-bottom: 7px;
-    }
+textarea {
+  background-color: #e1e1ca;
+  color: rgb(143, 141, 141);
+  border-color: #615c23;
+  border-radius: 8px;
+  height: 338px;
+  padding: 16px 20px;
+}
 
-    input{
-      background-color: #e1e1ca;
-      color:rgb(143, 141, 141);
-      border-color: #615C23;
-      border-radius:8px;
-      height: 50px;
-      padding: 0 10px;
-      
-    }
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3c4618;
+  box-shadow: 0 0 0 1px #3e421e;
+}
 
-    textarea{
-      background-color: #e1e1ca;
-      color:rgb(143, 141, 141);
-      border-color: #615C23;
-      border-radius:8px;
-      height:338px;
-      padding: 16px  20px;
-    }
+.delivery-time-flex {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 50px;
+}
 
-    input:focus,
-    textarea:focus{
-      outline: none;
-      border-color: #3C4618;
-      box-shadow: 0 0 0 1px #3e421e;
-    }
+.delivery-time-flex input {
+  flex: 1;
+}
 
-    .delivery-time-flex{
-      display:flex;
-      gap: 16px;
-      width: 100%;
-      margin-bottom: 50px;
-    }
+.submit-button {
+  width: 366px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #999a4e;
+  color: #e1e1ca;
+  font-size: 17px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
 
-    .delivery-time-flex input{
-      flex:1;
-    }
+.submit-button:hover {
+  background-color: #3c4618;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
 
-    .submit-button{
-      width: 366px; 
-      height:50px;
-      border-radius: 10px;
-      background-color: #999A4E;
-      color: #e1e1ca;
-      font-size: 17px;
-      font-weight: 600;
-      transition: transform 0.2s ease;
-      cursor: pointer;
-    }
-
-    .submit-button:hover{
-      background-color: #3C4618; 
-      transform: translateY(-3px);
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25)
-    }
-
-
-    @media (max-width: 1175px) {
-  
+@media (max-width: 1175px) {
   .images-align,
   .flex-container {
     margin-left: 30px;
@@ -286,14 +276,12 @@ max-width:340px;
 }
 
 @media (max-width: 768px) {
-  
   .images-align {
     flex-direction: column;
     align-items: center;
     gap: 40px;
     margin: 40px 20px;
   }
-
 
   .flex-container {
     flex-direction: column;
@@ -310,25 +298,21 @@ max-width:340px;
     font-size: 20px;
   }
 
-  
   .big-form-cont {
     margin-top: 50px;
     padding: 0 20px;
   }
 
-  
   .delivery-time-flex {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 30px;
   }
 
-  
   .submit-button {
     width: 100%;
   }
 
- 
   textarea {
     height: 180px;
   }
