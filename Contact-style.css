@@ -17,29 +17,26 @@ h1 {
   line-height: normal;
 }
 
-ul {
+.contactPage ul {
   list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .icons {
-  width: 20 px;
-  padding: 10;
+  width: 1rem;
 }
 
 a {
   text-decoration: none;
 }
-span {
-  color: #3c4618;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 10px;
-}
+
 .websiteLink {
   color: #3c4618;
   font-weight: 400;
   font-size: 16px;
-  padding: 10px;
 }
 
 .openingHours {
@@ -58,6 +55,7 @@ span {
   color: #3c4618;
   margin-top: 0px;
   margin-bottom: 10px;
+  margin-right: 12px;
 }
 
 .vline {
@@ -91,10 +89,6 @@ span {
   align-items: flex-start;
 } */
 
-.websiteLink {
-  padding: 15px;
-}
-
 .contactInfo2 li {
   margin-bottom: 0.75rem;
   /* display: flex;
@@ -109,17 +103,51 @@ span {
   white-space: nowrap;
 }
 
-.contactPage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.contactInfo span,
+.contactInfo1 span,
+.contactInfo2 span {
+  color: #3c4618;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 10px;
 }
 
+.contactPage {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 64px;
+  flex-wrap: wrap;
+}
+@media (max-width: 960px) {
+  .contactPage {
+    justify-content: flex-start;
+    gap: 32px;
+  }
+  /* .flowerDivider img {
+    width: 70%;
+  } */
+}
+@media (max-width: 630px) {
+  .contactPage {
+    gap: 16px;
+  }
+  .vline {
+    display: none;
+  }
+  .flowerDivider img {
+    min-width: 50%;
+  }
+  /* .btn {
+    width: auto;
+  } */
+}
 .btn {
   padding-bottom: 4px;
   padding-inline-start: 10px;
   padding-top: 4px;
   display: flex;
-  width: 366px;
+  width: 50%;
   /* padding: 15px 10px; */
   justify-content: center;
   align-items: center;
@@ -133,6 +161,7 @@ span {
   border: 1.3px solid #3c4618;
   color: #3c4618;
   background: none;
+  margin: 0px;
 }
 .section2 {
   margin: 60px;
@@ -153,13 +182,14 @@ span {
 #inputField {
   display: block;
   width: 100%;
-  height: 338px;
-  padding: 34px 18px;
+  height: 150px;
+  padding: 8px 18px;
   box-sizing: border-box;
   border: 1.3px solid #3c4618;
   border-radius: 8px;
   resize: vertical;
   background: none;
+  margin-bottom: 0px;
 }
 
 .flowerDivider {
@@ -168,4 +198,10 @@ span {
 
 .flowerDivider img {
   margin-inline: auto;
+}
+
+.contactInfo0 li a,
+.contactInfo1 li a,
+.contactInfo2 li a {
+  display: flex;
 }
