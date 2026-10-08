@@ -42,7 +42,7 @@ body {
   text-decoration: none;
 }
 
-.logo-icon {
+.header-logo {
   width: 32px;
   height: 41px;
 }
@@ -61,13 +61,13 @@ body {
   height: 1.5rem;
 }
 
-.socials {
+.header-socials {
   display: flex;
   gap: 1.5rem;
   margin-left: auto;
 }
 
-.socials a {
+.header-socials a {
   display: flex;
 }
 
