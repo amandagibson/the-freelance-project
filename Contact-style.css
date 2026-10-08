@@ -113,7 +113,7 @@ span {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.btn .btn {
+.btn {
   padding-bottom: 15px;
   padding-inline-start: 10px;
   padding-top: 15px;
@@ -126,9 +126,10 @@ span {
 }
 .btn {
   font-family: var(--font-main);
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 24px;
   border-radius: 10px;
   border: 2px solid #3c4618;
   color: #3c4618;
-  background-color: none;
+  background: none;
 }
