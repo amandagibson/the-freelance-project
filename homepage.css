@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Italiana";
-  src: url("Italiana-Regular.ttf") format("truetype");
+  src: url("assets/Italiana-Regular.ttf") format("truetype");
 }
 
 
@@ -145,7 +145,7 @@ h1.shop-name {
     display: flex;
     align-items: center;
     gap: 80px;
-    padding: 40px;
+    padding: 60px;
     margin-top: 0;
 }
 
