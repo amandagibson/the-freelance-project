@@ -64,3 +64,48 @@ body {
 .header-socials a {
   display: flex;
 }
+
+@media (max-width: 900px) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .nav {
+    gap: 2rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .header-socials {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 1.25rem;
+    min-height: 3rem;
+  }
+
+  .nav {
+    gap: 0.75rem;
+  }
+
+  .header-logo {
+    height: 2rem;
+  }
+
+  .header-socials {
+    display: none;
+  }
+
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
+}
