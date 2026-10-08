@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Contact-style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Contact-style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Contact</title>
   </head>
   <body>
@@ -35,54 +35,95 @@
         </div>
       </nav>
     </header>
+    <h1>Contact</h1>
     <div class="contactPage">
-      <h1>Contact</h1>
-      <div  class="openingHours">
-        <h2>Opening hours</h2>
-        <p>Monday:Closed</p>
-        <p>Tuesday - Friday : 11-18</p>
-        <p>Saturday : 10-18</p>
-        <p>Sunday : 1-16</p>
-      </div>
-      <div class="contactInfo1"> 
-        <div class="phone">
-          <img src="assets\contactAssets\phoneIcon.svg" alt:phone icon />
-          <p>+4686445877</p> 
+      <div class="contactInfo0">
+        <div class="openingHours">
+          <h2>Opening hours</h2>
+          <p class="noGap">Monday:Closed</p>
+          <p class="noGap">Tuesday - Friday : 11-18</p>
+          <p class="noGap">Saturday : 10-18</p>
+          <p class="noGap">Sunday : 1-16</p>
         </div>
-        <div class="address">
-          <img src="assets\contactAssets\location.svg" alt:location pin />
-          <a href="https://share.google/eLMhzzhkmMzpUgVKN" target="_blank">Långholmsgatan 1B, 117 33 Stockholm</a>
-        </div>
-        <div class="websiteLink">
-          <a href="https://rcoblommer.wordpress.com/" target="_blank">Website: "https://rcoblommer.wordpress.com/"</a>
+        <div class="vline"></div>
       </div>
-      <div class="vline"></div>
+      <div class="contactInfo1">
+        <ul class="contact-list phone-address">
+          <li>
+            <a href="tel:+4686346777">
+              <img
+                class="icons"
+                src="assets\contactAssets\phoneIcon.svg"
+                alt="call icon"
+              />
+              <span>+46 (0)8-6346777</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=L%C3%A5ngholmsgatan%201B%2C%20117%2033%20Stockholm"
+            >
+              <img
+                class="icons"
+                src="assets\contactAssets\location.svg"
+                alt="pin icon"
+              />
+              <span>Långholmsgatan 1B, 117 33 Stockholm</span>
+            </a>
+          </li>
+          <li class="websiteLink">
+            <div class="icons"></div>
+            <a href="https://rcoblommer.wordpress.com/" target="_blank">
+              <span>https://rcoblommer.wordpress.com/</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="contactInfo2">
-        <div class="facebook">
-          <img src="assets\contactAssets\Facebook Icon.svg" alt:facebook icon/>
-          <a href="https://www.facebook.com/rcoblommor" target="_blank">https://www.facebook.com/rcoblommor</a>
-        </div>
-        <div class="email">
-          <img src="assets\contactAssets\Subtract.svg" alt: email icon/>
-          <a href="rcoblommor@gmail.com" target="_blank">rcoblommor@gmail.com</a>
-        </div>
-        <div class="instagram">
-          <img src="assets\contactAssets\Instagram.svg" alt="instagram icon" />
-          <a href="https://www.instagram.com/rcoblommor/">https://www.instagram.com/rcoblommor/</a>
-        </div>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/rcoblommor">
+              <img
+                class="icons"
+                src="assets\contactAssets\Facebook Icon.svg"
+                alt=""
+              />
+              <span>https://www.facebook.com/rcoblommor</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rcoblommor/">
+              <img
+                class="icons"
+                src="assets\contactAssets\Instagram.svg"
+                alt=""
+              />
+              <span>https://www.instagram.com/rcoblommor/</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:rcoblommor@gmail.com">
+              <img
+                class="icons"
+                src="assets\contactAssets\Subtract.svg"
+                alt=""
+              />
+              <span>rcoblommor@gmail.com</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="flowerDivider">
-        <img src="assets\contactAssets\flower.svg" alt="Pencile draw flower"/>
+        <img src="assets\contactAssets\flower.svg" alt="Pencile draw flower" />
       </div>
       <div>
         <h3>More questions? Write for us</h3>
         <form>
           <label>Write for us here</label>
-          <input type="text" id="inputField" name="inputFiled"><br><br>
+          <input type="text" id="inputField" name="inputFiled" /><br /><br />
         </form>
-        <button type="button" onclick="alert('Send')">Send</button>
+        <button class="btn">Send</button>
       </div>
-    </div>  
+    </div>
   </body>
 </html>
- 

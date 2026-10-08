@@ -1,62 +1,134 @@
 @font-face {
- font-family:"Italiana";
- src: url("assets/Italiana/Italiana-Regular.ttf") format(truetype)
+  font-family: "Italiana";
+  src: url("assets/Italiana/Italiana-Regular.ttf") format(truetype);
 }
-.contactPage{
-    margin: 60px;
+.contactPage {
+  margin: 60px;
 }
 
 h1 {
-text-align: center;
-color: #000;
-font-family: "Italiana";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  text-align: center;
+  color: #000;
+  font-family: "Italiana";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-
-.phone {
-    display:flex;
-    direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
+ul {
+  list-style: none;
 }
 
-.phone p {
-    color: #3C4618;
-font-family: Afacad;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.icons {
+  width: 20 px;
+  padding: 10;
 }
 
-.address {
-      display:flex;
-    direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
+a {
+  text-decoration: none;
+}
+span {
+  color: #3c4618;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
+}
+.websiteLink {
+  color: #3c4618;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px;
 }
 
-.address a {
-    color: #3C4618;
-    font-family: Afacad;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.openingHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0px;
+  white-space: nowrap;
 }
 
+.openingHours h2 {
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 600;
+  color: #3c4618;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.vline {
+  width: 1px;
+  align-self: stretch;
+  background-color: #3c4618;
+  margin-inline: auto;
+}
+
+.contactInfo0 {
+  display: flex;
+}
+
+.openingHours p {
+  color: #3c4618;
+  font-family: Afacad;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.noGap {
+  margin: 0px;
+}
+
+/* .contactInfo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+} */
 
 .websiteLink {
-      color: #3C4618;
-    font-family: Afacad;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  padding: 15px;
+}
+
+.contactInfo2 li {
+  margin-bottom: 0.75rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start; */
+}
+
+.contactInfo,
+.contactInfo1,
+.contactInfo2 {
+  white-space: nowrap;
+}
+
+.contactPage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn .btn {
+  padding-bottom: 15px;
+  padding-inline-start: 10px;
+  padding-top: 15px;
+  display: flex;
+  width: 366px;
+  /* padding: 15px 10px; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  font-family: var(--font-main);
+  font-weight: 400;
+  border-radius: 10px;
+  border: 2px solid #3c4618;
+  color: #3c4618;
+  background-color: none;
 }
