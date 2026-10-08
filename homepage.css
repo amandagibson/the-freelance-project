@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "Italiana";
+  src: url("assets/Italiana-Regular.ttf") format("truetype");
+}
+
+
+/* First section (our services) */
+
+
+h1.shop-name {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 60px 0 40px;
+  font-family: "italiana", sans-serif;
+  color: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 60px;
+}
+
+.hero-img {
+  flex: none;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.hero-text {
+  flex: 1;  
+  min-width: 0;
+  padding: 0 40px 0 0;
+  font-family: var(--font-main);
+  color: var(--dark-green);
+} 
+
+.hero-text h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero-text p {
+  margin: 0 0 24px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--dark-green);
+  color: var(--cream);
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* second section (reviews) */
+
+
+.reviews {
+     margin-top: 0;
+    padding: 0 60px 60px;
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+.reviews h2 {
+    margin: 0 0 30px;
+    font-size: 1.6rem;
+    color: var(--dark-green);
+}
+
+.review-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.review-card {
+    flex: 1;              
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #5a5a1e;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;   
+    background: var(--dark-green);
+}
+
+.reviewer-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #000;
+    font-family: var(--font-main);
+}
+
+.stars {
+    color: #e0a800;  
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.stars .empty {
+    color: #666;     
+}
+
+.review-text {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-family: var(--font-main);
+    color: var(--dark-green);
+}
+
+.review-date {
+    font-size: 0.75rem;
+}
+
+
+/* Third section (our story) */
+
+
+.story {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 60px;
+    margin-top: 0;
+}
+
+.story-img {
+    flex: none;            
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.story-text {
+    flex: 1;
+    min-width: 0;
+    padding: 0 120px 0 40px;
+    font-family: var(--font-main);
+    color: var(--dark-green);
+}
+
+.story-text h2 {
+    margin: 0 0 12px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.story-text p {
+    margin: 0 0 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.title-area {
+    display: flex;  
+    justify-content: center;     
+    padding: 60px 60px 60px;
+}
+
+.title-wrap {
+    position: relative;
+}
+
+.shop-name {
+    margin: 0;
+}
+
+.first-flower {
+    position: absolute;
+    left: 100%;  
+    margin-left: 90px;  
+    top: -45px;
+}    
+             
+.middle-flower, .last-flower {
+    display: block;
+    margin: 0 auto 40px;
+}  
+
+.last-flower {
+    margin-top: 30px;
+}
+
+
+/* responsivness Tablet */
+
+
+@media (max-width: 1024px) {
+
+    .title-area {
+        padding: 50px 40px;
+    }
+
+    h1.shop-name {
+        font-size: 2.8rem;
+        margin: 0;
+    }
+
+    .first-flower {
+        width: 100px;
+        height: auto;
+        margin-top: 10;
+        margin-bottom: 0;
+        margin-left: 30px;
+    }
+    .middle-flower {
+        width: 140px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .last-flower {
+        width: 140;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0;
+    }
+    .reviews {
+        padding: 0 20px 0;
+    }
+
+    .review-card {
+        padding: 14px;
+    }
+
+    .story {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .story-text {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* responsiveness phone */
+
+@media (max-width: 700px) {
+
+    .title-area {
+        padding: 40px 20px;
+    }
+
+    h1.shop-name {
+        font-size: 2.2rem;
+    }
+
+
+    .hero {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .reviews {
+        padding: 0 20px 20px;
+    }
+
+    .reviews h2 {
+        font-size: 1.4rem;
+    }
+
+    .review-cards {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .story {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .story-text h2 {
+        font-size: 26px;
+    }
+
+    .story-text p {
+        font-size: 16px;
+    }
+
+    .middle-flower {
+        width: 100px;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+   
+   .last-flower {
+        width: 150px;
+        height: auto;
+    }
+
+    .title-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .first-flower {
+        position: static;
+        left: auto;
+        top: auto;  
+        width: 100px;
+        height: auto;
+        margin: 0 0 10px;
+    }
+}
