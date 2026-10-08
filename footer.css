@@ -3,6 +3,11 @@
 :root {
   --white: #fff;
 }
+
+/* KEEP? Co-pilot suggestion --One small related improvement is to add this globally to prevent horizontal overflow: */
+* {
+  box-sizing: border-box;
+}
 /* MOVE to styles.css- page-level layout that pushes the footer to the bottom. */
 body {
   min-height: 100vh;
@@ -28,6 +33,7 @@ main {
   min-height: 21.75rem;
   grid-template-rows: 1fr auto;
   column-gap: 2rem;
+  width: 100%;
 }
 
 .footer a {
@@ -80,4 +86,81 @@ main {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.75rem;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo logo"
+      "contact socials"
+      "disclaimer disclaimer";
+    gap: 2rem;
+    padding: 2.5rem 2rem 1rem;
+    min-height: auto;
+  }
+
+  .footer-logo {
+    grid-area: logo;
+    justify-self: center;
+    height: 11rem;
+  }
+
+  .footer-contact {
+    grid-area: contact;
+  }
+
+  .footer-socials {
+    grid-area: socials;
+    justify-self: end;
+  }
+
+  .footer-disclaimer {
+    grid-area: disclaimer;
+  }
+
+  .footer-list a {
+    align-items: flex-start;
+  }
+
+  .footer-list a span {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "contact"
+      "socials"
+      "disclaimer";
+    gap: 1.75rem;
+    padding: 2rem 1.25rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .footer-logo {
+    height: 9rem;
+  }
+
+  .footer-socials {
+    justify-self: start;
+  }
+
+  .footer-list {
+    gap: 1rem;
+  }
+
+  .footer-list a {
+    gap: 0.75rem;
+  }
+
+  .footer-disclaimer {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
 }
